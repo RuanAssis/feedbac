@@ -1,7 +1,11 @@
+import iconStar from "./assets/icon-star.svg"
+
 export function App() {
   return(
-    <div>
-      <h1>Hello</h1>
+    <div className="bg-radial-gradient text-white">
+     <div>
+      
+     </div>
     </div>
   )
 }
