@@ -2,6 +2,9 @@
 
 @theme {
     --color-very-dark-blue: #131518;
+    --color-dark-blue: #262E38;
+
+    --font-overpass: "Overpass", "sans-serif";
 }
 
 @layer utilities {
