@@ -1,5 +1,5 @@
 import iconStar from "../assets/icon-star.svg"
-
+import { Button } from "./Button";
 export function CardInicial({setSubmited, rateNote, setRateNote}){
     function handleSubmit() {
         if (rateNote !== 0) {
