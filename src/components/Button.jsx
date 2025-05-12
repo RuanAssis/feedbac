@@ -1,4 +1,4 @@
-export function Button(value){
+export function Button({value, setRateNote}){
     function handleChangeRateNote(value){
         setRateNote(value)
     }

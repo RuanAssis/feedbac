@@ -1,6 +1,6 @@
 import iconStar from "../assets/icon-star.svg"
 
-export function CardInicial({setSubmited, rateNote}){
+export function CardInicial({setSubmited, rateNote, setRateNote}){
     function handleSubmit() {
         if (rateNote !== 0) {
           setSubmited(true)
@@ -21,11 +21,11 @@ export function CardInicial({setSubmited, rateNote}){
             <p className="text-sm text-light-grey leading-1 mb-6">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
             <div className="flex justify-between mb-6">
-               <Button value={1}/>
-               <Button value={2}/>
-               <Button value={3}/>
-               <Button value={4}/>
-               <Button value={5}/>
+               <Button value={1} setRateNote={setRateNote}/>
+               <Button value={2} setRateNote={setRateNote}/>
+               <Button value={3} setRateNote={setRateNote}/>
+               <Button value={4} setRateNote={setRateNote}/>
+               <Button value={5} setRateNote={setRateNote}/>
             </div>
 
             <button onClick={handleSubmit} className="bg-orange w-full py-3 rounded-3xl uppercase font-bold tracking-1 hover:bg-white hover:text-orange duration-400 cursor-pointer">Submit</button>
